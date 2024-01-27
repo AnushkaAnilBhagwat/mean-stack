@@ -44,4 +44,8 @@ export class EmployeesComponent {
   goToAddEmployee() {
     this.router.navigate(['/add-employee']);
   }
+
+  goToUpdateEmployee(id: any, firstName: any, lastName: any) {
+    this.router.navigate(['/update-employee/' + id + '/' + firstName + '/' + lastName]);
+  }
 }

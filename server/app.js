@@ -4,7 +4,7 @@ require('dotenv').config();
 
 var app = express();
 
-// console.log(process.env.mongodb_url);
+console.log(process.env.mongodb_url);
 mongoose.connect(process.env.mongodb_url).then(() => {
   console.log('Database connection established');
 }).catch((error) => {

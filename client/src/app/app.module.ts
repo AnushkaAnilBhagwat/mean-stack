@@ -9,6 +9,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AddEmployeeComponent } from "./add-employee/add-employee.component";
 import { RegisterComponent } from "./register/register.component";
 import { LoginComponent } from "./login/login.component";
+import { UpdateEmployeeComponent } from "./update-employee/update-employee.component";
 
 @NgModule({
     declarations: [
@@ -16,13 +17,14 @@ import { LoginComponent } from "./login/login.component";
         EmployeesComponent,
         AddEmployeeComponent,
         RegisterComponent,
-        LoginComponent
+        LoginComponent,
+        UpdateEmployeeComponent
     ],
     imports: [
         CommonModule,
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule, 
+        HttpClientModule,
         FormsModule
     ],
     bootstrap: [AppComponent]

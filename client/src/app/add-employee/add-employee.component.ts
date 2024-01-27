@@ -20,6 +20,8 @@ export class AddEmployeeComponent {
   ) {}
 
   createEmployee() {
+    console.log("here");
+
     this.http.post('http://localhost:3000/employees', this.newEmployee).subscribe({
       next: (res: any) => {
         console.log(res);
